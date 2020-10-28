@@ -48,3 +48,34 @@
 ```
    conda install -c anaconda tk
 ```
+
+
+## Exam Process | What to do and how to do technically?
+- Start
+- Calibration Time (2mins)
+   - Face visible?
+      - Haar Cascades
+   - Face verification
+      - **TODO RESEARCH**
+   - Multiple faces?
+      - Haar Cascades
+   - Audio (calibration)
+      - Some basic python framwork
+- Exam Starts
+   - Vedio ? (Face Not detected or audio thresold crossing?)
+      - Recording of audio and vedio stream
+      - Haar Cascades
+   - Software fraud detection
+      - Mouse Tracking + GUI Functionaliyt
+   - Electonic Devices Detection
+      - **TODO RESEARCH**
+- Exam End
+  - Report Generation 
+
+## TODO
+- Research on how to perform identification of individual faces
+- Electronic Device Detection Model
+- GUI Construction
+- Mouse Tracking Basic Testing
+
+   
