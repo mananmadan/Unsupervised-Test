@@ -77,7 +77,7 @@
   - Report Generation 
 
 ## TODO
-- Research on how to perform identification of individual faces
+- Research on how to perform identification of individual faces(Done)
 - Electronic Device Detection Model
 - GUI Construction
 - Mouse Tracking Basic Testing (Done)
