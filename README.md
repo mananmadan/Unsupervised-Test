@@ -48,7 +48,11 @@
 ```
    conda install -c anaconda tk
 ```
+- Face Recognition Library
+```
+  conda install -c conda-forge face_recognition
 
+```
 
 ## Exam Process | What to do and how to do technically?
 - Start
