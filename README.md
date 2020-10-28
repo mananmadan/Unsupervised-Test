@@ -80,6 +80,6 @@
 - Research on how to perform identification of individual faces
 - Electronic Device Detection Model
 - GUI Construction
-- Mouse Tracking Basic Testing
+- Mouse Tracking Basic Testing (Done)
 
    
