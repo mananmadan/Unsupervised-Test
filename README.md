@@ -22,11 +22,11 @@
 
 ## How to use?
 - create an enviroment using requirements.txt
-- FOR LINUX USERS
+- FOR CONDA INSTALL
 ```
     conda create --name <name> --file requirements.txt
 ```
-- FOR WINDOWS USERS
+- FOR MANUAL INSTALL
 - OpenCV for facial detection
 ```
    conda install -c conda-forge opencv
