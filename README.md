@@ -19,3 +19,32 @@
 3. Object Detection
   - Fairly simple!
   - Not know wheather it will be helpful or not
+
+## How to use?
+- create an enviroment using requirements.txt
+- FOR LINUX USERS
+```
+    conda create --name <name> --file requirements.txt
+```
+- FOR WINDOWS USERS
+- OpenCV for facial detection
+```
+   conda install -c conda-forge opencv
+```
+- Tensorflow for facial keypoint detection
+```
+   conda install -c conda-forge tensorflow 
+```
+- **Above command can take time , also might be fail intial solves , but will install finally !**
+- Pynput for tracking mouse !
+```
+   conda install -c conda-forge pynput
+```
+- Pyqt for GUI
+```
+   conda install -c anaconda pyqt
+```
+- Tkinkter also for GUI
+```
+   conda install -c anaconda tk
+```
