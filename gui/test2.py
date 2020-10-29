@@ -15,7 +15,7 @@ window.title("Cheater's Bane")
 
 #---------------------------------------------------------------------------------------------------------------
 #first get the picture then save it in pic and set as background
-image = Image.open("/home/gaurav/Desktop/Unsupervised-Test/blueBG.jpg")
+image = Image.open("blueBG.jpg")
 pic = ImageTk.PhotoImage(image)
 
 label0 = Label(image = pic)
