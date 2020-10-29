@@ -29,19 +29,23 @@ mamta_face_encoding = face_recognition.face_encodings(mamta_image)[0]
 rajneesh_image = face_recognition.load_image_file("rajneesh.jpg")
 rajneesh_face_encoding = face_recognition.face_encodings(rajneesh_image)[0]
 
+shefali_image = face_recognition.load_image_file("shefali.jpg")
+shefali_face_encoding = face_recognition.face_encodings(shefali_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
      manan_face_encoding,
      rishima_face_encoding,
      mamta_face_encoding,
-     rajneesh_face_encoding
+     rajneesh_face_encoding,
+     shefali_face_encoding
 ]
 known_face_names = [
     "Manan Madan",
     "Rishima",
     "Mamta Madan",
-    "Rajneesh"
+    "Rajneesh",
+    "Shefali"
 ]
 
 # Initialize some variables
