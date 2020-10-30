@@ -83,4 +83,5 @@
 - Mouse Tracking Basic Testing (Done)
 
 ## Output
-- ![output](output.jpg)
+
+![output](output.jpg)
