@@ -32,7 +32,7 @@ def login():
             sys.exit()
             
         else:
-            label4 = Label(window, text = ("Incorrect Password for " + username),width = 25, font = ("arial", 40, "bold"))
+            label4 = Label(window, text = ("Incorrect Password for " + username),width = 25, font = ("arial", 30, "bold"))
             label4.place(x = 0, y = 400)
 
     else:
