@@ -6,7 +6,7 @@ import random
 import sys
 import time
 from pynput import keyboard
-
+time.sleep(10)
 # questions = [
 #     "How many Keywords are there in C Programming language ?",
 #     "Which of the following functions takes A console Input in Python ?",

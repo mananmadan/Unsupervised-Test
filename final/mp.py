@@ -6,7 +6,7 @@ import time
 mouse = Controller()
  # Read pointer position
  #return mouse.position
-
+time.sleep(10)
 while True:
     print(mouse.position)
     time.sleep(1)
