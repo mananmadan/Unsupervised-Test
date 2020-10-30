@@ -1,3 +1,3 @@
 python login.py
-python quiz.py
+python mp.py & python quiz.py
 killall python
