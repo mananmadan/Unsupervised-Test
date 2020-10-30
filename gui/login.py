@@ -8,8 +8,7 @@ window.geometry("800x500+300+100")
 #set size permanently   #or you can use window.resizabld(false, false)
 window.minsize(800, 500)
 window.maxsize(800, 500)
-window.title("Cheater's Bane")
-#window.iconbitmap("/home/gaurav/Desktop/Unsupervised-Test/lock_v2W_icon.ico")
+window.title("Login Page")
 
 #---------------------------------------------------------------------------------------------------------------
 #first get the picture then save it in pic and set as background
