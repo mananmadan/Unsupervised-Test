@@ -5,6 +5,8 @@ from tkinter import *
 import random
 import sys
 import time
+from pynput import keyboard
+
 # questions = [
 #     "How many Keywords are there in C Programming language ?",
 #     "Which of the following functions takes A console Input in Python ?",
@@ -30,6 +32,25 @@ import time
 #     ["function","void","fun","def",],
 #     ["all","var","let","global",],
 # ] 
+## helper function for keyboard listener
+def on_press(key):
+        if key.char == 'q':
+            print("killing")
+            sys.exit()
+
+## helper function for keyboard listener
+def on_release(key):
+    print('{0} released'.format(
+        key))
+    if key == keyboard.Key.esc:
+        # Stop listener
+        return False
+
+def wait_key():
+ with keyboard.Listener(
+        on_press=on_press,
+        on_release=on_release) as listener:
+        listener.join()
 
 # load questions and answer choices from json file instead of the file
 with open('data.json', encoding="utf8") as f:
@@ -90,9 +111,6 @@ def showresult(score):
         labelresulttext.configure(text="Score : "+ str(score) + "\n You Should Work Hard")
         labelimage.image = img
         #labelresulttext.configure(text=" !!")
-    print("here")
-
-
 def calc():
     global indexes,user_answer,answers
     x = 0
@@ -103,7 +121,6 @@ def calc():
         x += 1
     print(score)
     showresult(score)
-
 
 ques = 1
 def selected():
@@ -126,6 +143,8 @@ def selected():
         # these two lines were just developement code
         # we don't need them
         calc()
+        print("finally here")
+        root.destroy()
     
 
 
@@ -209,8 +228,6 @@ root.title("Quiz")
 root.geometry("700x600")
 root.config(background="#ffffff")
 root.resizable(0,0)
-
-
 img1 = PhotoImage(file="transparentGradHat.png")
 
 labelimage = Label(
