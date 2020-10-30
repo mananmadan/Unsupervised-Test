@@ -85,3 +85,9 @@
 ## Output
 
 ![output](output.jpg)
+
+## Future Scope
+- ML Model for facial keypoint 
+- Web integration
+- Database
+
