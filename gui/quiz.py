@@ -3,8 +3,8 @@ import json
 import tkinter
 from tkinter import *
 import random
-
-
+import sys
+import time
 # questions = [
 #     "How many Keywords are there in C Programming language ?",
 #     "Which of the following functions takes A console Input in Python ?",
@@ -32,7 +32,7 @@ import random
 # ] 
 
 # load questions and answer choices from json file instead of the file
-with open('./data.json', encoding="utf8") as f:
+with open('data.json', encoding="utf8") as f:
     data = json.load(f)
 
 # convert the dictionary in lists of questions and answers_choice 
@@ -90,6 +90,7 @@ def showresult(score):
         labelresulttext.configure(text="Score : "+ str(score) + "\n You Should Work Hard")
         labelimage.image = img
         #labelresulttext.configure(text=" !!")
+    print("here")
 
 
 def calc():
