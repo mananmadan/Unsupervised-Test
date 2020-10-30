@@ -144,7 +144,7 @@ def selected():
         # we don't need them
         calc()
         print("finally here")
-        root.destroy()
+        #root.destroy()
     
 
 
