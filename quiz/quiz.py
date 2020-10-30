@@ -204,7 +204,7 @@ def startIspressed():
 
 
 root = tkinter.Tk()
-root.title("Cheater's Bane")
+root.title("Quiz")
 root.geometry("700x600")
 root.config(background="#ffffff")
 root.resizable(0,0)
@@ -221,7 +221,7 @@ labelimage.pack(pady=(40,0))
 
 labeltext = Label(
     root,
-    text = "Cheater's Bane",
+    text = "Quiz",
     font = ("Comic sans MS",24,"bold"),
     background = "#ffffff",
 )
