@@ -82,4 +82,5 @@
 - GUI Construction
 - Mouse Tracking Basic Testing (Done)
 
-   
+## Output
+- ![output](output.jpg)
