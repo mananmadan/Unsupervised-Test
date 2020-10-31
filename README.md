@@ -98,6 +98,9 @@
 
 ## Future Scope
 - ML Model for facial keypoint 
+  - Could use Mouth Detection , to detect speaking
+  - Maybe eye ball movement to detect , if the focus is only on the screen or
+  not
+  - Maybe head angle pointing direction
 - Web integration
 - Database
-
