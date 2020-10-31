@@ -1,6 +1,8 @@
 from tkinter import *
 from PIL import Image, ImageTk
 import sys
+import csv
+from datetime import datetime
 #--------------------------------------------------------------------------------------------------------------
 #create the window and add size and title to it
 window = Tk()
@@ -33,6 +35,16 @@ def login():
         if (users[username] == Pass):
             label4 = Label(window, text = ("Welcome " + username),width = 25, font = ("arial", 40, "bold"))
             label4.place(x = 0, y = 400)
+            """
+            with open('initialise.csv', 'a') as csvfile:
+                writer=csv.writer(csvfile, delimiter=',')
+                print(datetime.now())
+                writer.writerows(zip(username,str(datetime.now())))
+            """
+            file = open('Record.csv','a')
+            entry = username + "," + str(datetime.now())
+            file.write(entry)
+            file.close()
             sys.exit()
             
         else:
