@@ -28,7 +28,7 @@ label0.pack(fill = BOTH, expand = 'yes')
 # -------------------------------------------------
 #functions for the buttons to perform
 def login():
-    users = {'admin': '1000', 'dev': '2000', 'client': '3000', 'employee': '4000'}
+    users = {'MananMadan': 'manan@0108', 'Rishima': 'rishima', 'MamtaMadan': 'mamta', 'Rajneesh': 'rajneesh','Shefali':'shefali'}
     username = userName.get()
     Pass = password.get()
     username=remove(username)
@@ -38,7 +38,7 @@ def login():
             label4.place(x = 0, y = 400)
             file = open('Record.csv','a')
             entry = username + "," + str(datetime.now())
-            file.write(entry)
+            file.write('\n'+entry)
             file.close()
             sys.exit()
             
