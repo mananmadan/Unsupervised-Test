@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 import sys
 import pandas as pd
+import re
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # other example, but it includes some basic performance tweaks to make things run a lot faster:
 #   1. Process each video frame at 1/4 resolution (though still display it at full resolution)
@@ -66,6 +67,11 @@ def authentic():
     temp_l = list(df['UName'])
     return temp_l[len(temp_l)-1]
 
+def remove(string): 
+    pattern = re.compile(r'\s+') 
+    return re.sub(pattern, '', string)
+#---------------------------------------------------------------------------------------------------------------
+
 username = authentic()
 print(username)
 ## count of sucess and count of the rest of the cases
@@ -106,7 +112,7 @@ while True:
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
 
-            face_names.append(name)
+            face_names.append(remove(name))
 
             font = cv2.FONT_HERSHEY_DUPLEX
             if len(face_names) > 1:
