@@ -10,6 +10,9 @@ window.minsize(800, 500)
 window.maxsize(800, 500)
 window.title("Login Page")
 
+def remove(string): 
+    pattern = re.compile(r'\s+') 
+    return re.sub(pattern, '', string)
 #---------------------------------------------------------------------------------------------------------------
 #first get the picture then save it in pic and set as background
 image = Image.open("blueBG.jpg")
@@ -25,6 +28,7 @@ def login():
     users = {'admin': '1000', 'dev': '2000', 'client': '3000', 'employee': '4000'}
     username = userName.get()
     Pass = password.get()
+    username=remove(username)
     if username in users :
         if (users[username] == Pass):
             label4 = Label(window, text = ("Welcome " + username),width = 25, font = ("arial", 40, "bold"))
