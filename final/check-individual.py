@@ -14,7 +14,12 @@ import sys
 # specific demo. If you have trouble installing it, try any of the other demos that don't require it instead.
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0)
+try:
+    video_capture = cv2.VideoCapture(0)
+except:
+    print("Your camera is not working , pls fix it to attempt the test ..")
+    print("After fixing pls restart the test")
+    time.sleep(5*60)
 
 # Load a sample picture and learn how to recognize it.
 manan_image = face_recognition.load_image_file("manan.jpg")
