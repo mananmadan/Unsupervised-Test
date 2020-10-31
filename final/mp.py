@@ -13,17 +13,17 @@ while True:
     if x < 566:
         print("you are going outside the screen")
         print("Clicking screenshot")
-        click_screenshot()
+        click_screenshot("Mouse")
     if x > 1348:
         print("you are going outside the screen")
         print("Clicking screenshot")
-        click_screenshot()
+        click_screenshot("Mouse")
     if y < 220:
         print("you are going outside the screen")
         print("Clicking screenshot")
-        click_screenshot()
+        click_screenshot("Mouse")
     if y > 888:
         print("you are going outside the screen")
         print("Clicking screenshot")
-        click_screenshot()
+        click_screenshot("Mouse")
     time.sleep(1)

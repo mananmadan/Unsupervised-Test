@@ -2,7 +2,7 @@
 import face_recognition
 import cv2
 import numpy as np
-
+from screenshot import click_screenshot
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # other example, but it includes some basic performance tweaks to make things run a lot faster:
 #   1. Process each video frame at 1/4 resolution (though still display it at full resolution)
@@ -86,9 +86,15 @@ while True:
             best_match_index = np.argmin(face_distances)
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
-
+            
             face_names.append(name)
-
+            if len(face_names) == 2:
+                print("Multiple Faces Detected , Clicking screenshot")
+                click_screenshot("Cam")
+            if len(face_names) == 1:
+                if face_names[0] == "Unknown" :
+                    print("Unkown Face Detected")
+                    click_screenshot("Cam")
     process_this_frame = not process_this_frame
 
 

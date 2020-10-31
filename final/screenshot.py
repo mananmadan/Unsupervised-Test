@@ -5,7 +5,7 @@ import cv2
 import pyautogui 
 from datetime import datetime
   
-def click_screenshot():
+def click_screenshot(tag):
     # take screenshot using pyautogui 
     image = pyautogui.screenshot() 
        
@@ -20,4 +20,4 @@ def click_screenshot():
     current_time = now.strftime("%H:%M:%S")
     print("Current Time =", current_time)
     # writing it to the disk using opencv 
-    cv2.imwrite("generated-report/image"+str(current_time)+".png", image) 
+    cv2.imwrite("generated-report/"+str(tag)+str(current_time)+".png", image) 
