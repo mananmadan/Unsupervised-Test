@@ -51,9 +51,15 @@
 - Face Recognition Library
 ```
   conda install -c conda-forge face_recognition
-
 ```
-
+- Library for clicking screenshots in case cheating attempt happens
+```
+  conda install -c conda-forge pyautogui
+```
+- Linux Install for clicking screenshots using programs
+```
+  sudo apt-get install scrot
+```
 ## Exam Process | What to do and how to do technically?
 - Start
 - Calibration Time (2mins)

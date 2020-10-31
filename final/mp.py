@@ -10,12 +10,12 @@ time.sleep(10)
 while True:
     print(mouse.position)
     x,y = mouse.position
-    if x < 255:
+    if x < 566:
         print("you are going outside the screen")
-    if x > 948:
+    if x > 1348:
         print("you are going outside the screen")
-    if y < 118:
+    if y < 220:
         print("you are going outside the screen")
-    if y > 744:
+    if y > 888:
         print("you are going outside the screen")
     time.sleep(1)
