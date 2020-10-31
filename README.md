@@ -60,6 +60,10 @@
 ```
   sudo apt-get install scrot
 ```
+- Sound Device for recoding audio
+```
+  conda install -c conda-forge python-sounddevice
+```
 ## Exam Process | What to do and how to do technically?
 - Start
 - Calibration Time (2mins)
