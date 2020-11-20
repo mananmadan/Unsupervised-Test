@@ -6,7 +6,11 @@
 - Mouse Location Tracking to detect cheating
 - Facial Tracking during exam to detect fraud
 
-## How to use?
+## Output
+![output](output.jpg)
+
+
+## Installation
 - create an enviroment using requirements.txt
 - FOR CONDA INSTALL
 ```
@@ -45,8 +49,6 @@
 ```
   conda install -c conda-forge python-sounddevice
 ```
-## Output
-![output](output.jpg)
 
 ## Future Scope
 - Object Detection to detect objects through which cheating can be done!
