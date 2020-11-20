@@ -2,6 +2,7 @@
 
 ## Features
 - GUI for test taking
+- User Authentication
 - Face Verification
 - Mouse Location Tracking to detect cheating
 - Facial Tracking during exam to detect fraud
@@ -53,5 +54,5 @@
 ## Future Scope
 - Object Detection to detect objects through which cheating can be done!
 - creditability score using the performance and cheating instances!
-
+- Web version?
 
