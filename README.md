@@ -1,24 +1,10 @@
-# Ideas
-- Track eyes , use geometry to figure out head facing direction
-- Use CNN based facial keypoints and pose to pose difference to figure out head movement
-- Also can use object detection to detect items that can be used for cheating
+# AI Proctoring System
 
-## Main FrameWorks
-- OpenCV -> For Processing on Vedio and images
-- TF , Keras -> For Deep Learning using facial keypoints
-
-## Research on Ideas
-1. Tracking eyes 
-  - [Haar-Cascade-Approach](https://www.youtube.com/watch?v=RvfF9CDzn1s&ab_channel=ProgrammingKnowledge)
-  - Advantages
-    - Required Less Computer power
-  - Disadvantage
-    - accuracy is questionable!
-2. Facial Keypoints
-  - [Facial-Keypoint-Approach](https://www.youtube.com/watch?v=vC3bTziLRTA&ab_channel=NeuralDimension)
-3. Object Detection
-  - Fairly simple!
-  - Not know wheather it will be helpful or not
+## Features
+- GUI for test taking
+- Face Verification
+- Mouse Movement Analysis to detect cheating
+- Facial Tracking during exam to detect fraud
 
 ## How to use?
 - create an enviroment using requirements.txt
@@ -31,11 +17,6 @@
 ```
    conda install -c conda-forge opencv
 ```
-- Tensorflow for facial keypoint detection
-```
-   conda install -c conda-forge tensorflow 
-```
-- **Above command can take time , also might be fail intial solves , but will install finally !**
 - Pynput for tracking mouse !
 ```
    conda install -c conda-forge pynput
@@ -64,43 +45,11 @@
 ```
   conda install -c conda-forge python-sounddevice
 ```
-## Exam Process | What to do and how to do technically?
-- Start
-- Calibration Time (2mins)
-   - Face visible?
-      - Haar Cascades
-   - Face verification
-      - **TODO RESEARCH**
-   - Multiple faces?
-      - Haar Cascades
-   - Audio (calibration)
-      - Some basic python framwork
-- Exam Starts
-   - Vedio ? (Face Not detected or audio thresold crossing?)
-      - Recording of audio and vedio stream
-      - Haar Cascades
-   - Software fraud detection
-      - Mouse Tracking + GUI Functionaliyt
-   - Electonic Devices Detection
-      - **TODO RESEARCH**
-- Exam End
-  - Report Generation 
-
-## TODO
-- Research on how to perform identification of individual faces(Done)
-- Electronic Device Detection Model
-- GUI Construction
-- Mouse Tracking Basic Testing (Done)
-
 ## Output
-
 ![output](output.jpg)
 
 ## Future Scope
-- ML Model for facial keypoint 
-  - Could use Mouth Detection , to detect speaking
-  - Maybe eye ball movement to detect , if the focus is only on the screen or
-  not
-  - Maybe head angle pointing direction
-- Web integration
-- Database
+- Object Detection to detect objects through which cheating can be done!
+- creditability score using the performance and cheating instances!
+
+
