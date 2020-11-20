@@ -3,7 +3,7 @@
 ## Features
 - GUI for test taking
 - Face Verification
-- Mouse Movement Analysis to detect cheating
+- Mouse Location Tracking to detect cheating
 - Facial Tracking during exam to detect fraud
 
 ## How to use?
