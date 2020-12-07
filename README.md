@@ -8,7 +8,7 @@
 - Facial Tracking during exam to detect fraud
 
 ## Output
-[![output-vedio](output.jpg)(https://youtu.be/NWWo4Ojeo4w)]
+[![output-vedio](output.jpg)](https://youtu.be/NWWo4Ojeo4w)
 
 
 ## Installation
