@@ -52,7 +52,7 @@
 ```
 
 ## Future Scope
+- Creditability score using the performance and cheating instances!
 - Object Detection to detect objects through which cheating can be done!
-- creditability score using the performance and cheating instances!
 - Web version?
 
