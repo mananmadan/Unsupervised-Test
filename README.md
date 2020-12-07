@@ -9,7 +9,7 @@
 
 ## Output
 [![output-vedio](output.jpg)](https://youtu.be/NWWo4Ojeo4w)
-
+- Click on the image to see the output vedio
 
 ## Installation
 - create an enviroment using requirements.txt
