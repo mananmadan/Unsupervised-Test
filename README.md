@@ -12,43 +12,27 @@
 - Click on the image to see the output vedio
 
 ## Installation
-- create an enviroment using requirements.txt
-- FOR CONDA INSTALL
+-Install conda ( https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04 )
+-Run the following command to create conda environment via environment.yml
 ```
-    conda create --name <name> --file requirements.txt
+conda env create --file=environment.yml
 ```
-- FOR MANUAL INSTALL
-- OpenCV for facial detection
+-activate the environment
 ```
-   conda install -c conda-forge opencv
+conda activate GovTechThon
 ```
-- Pynput for tracking mouse !
+-run the main.sh file via
 ```
-   conda install -c conda-forge pynput
+bash main.sh
 ```
-- Pyqt for GUI
+## Error
+- In Case of error "27667 Illegal instruction     (core dumped)" update dlib via:
 ```
-   conda install -c anaconda pyqt
-```
-- Tkinkter also for GUI
-```
-   conda install -c anaconda tk
-```
-- Face Recognition Library
-```
-  conda install -c conda-forge face_recognition
-```
-- Library for clicking screenshots in case cheating attempt happens
-```
-  conda install -c conda-forge pyautogui
-```
-- Linux Install for clicking screenshots using programs
-```
-  sudo apt-get install scrot
-```
-- Sound Device for recoding audio
-```
-  conda install -c conda-forge python-sounddevice
+pip uninstall face_recognition
+pip uninstall dlib
+pip install CMake
+pip insall dlib
+pip install face_recognition
 ```
 
 ## Future Scope
